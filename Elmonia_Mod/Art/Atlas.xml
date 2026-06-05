@@ -1,0 +1,19 @@
+-- Rekisteröidään Elmonian atlas peliin
+INSERT INTO IconTextureAtlases (Atlas, IconSize, Filename, IconsPerRow, IconsPerColumn)
+VALUES
+    ('ELMONIA_ATLAS', 256, 'Art/Elmonia_Atlas_256.dds', 2, 2),
+    ('ELMONIA_ATLAS', 128, 'Art/Elmonia_Atlas_128.dds', 2, 2),
+    ('ELMONIA_ATLAS', 64,  'Art/Elmonia_Atlas_64.dds',  2, 2),
+    ('ELMONIA_ATLAS', 32,  'Art/Elmonia_Atlas_32.dds',  2, 2),
+    ('ELMONIA_ATLAS', 45,  'Art/Elmonia_Atlas_45.dds',  2, 2),
+    ('ELMONIA_ATLAS', 80,  'Art/Elmonia_Atlas_80.dds',  2, 2),
+    ('ELMONIA_VAAKUNA', 256, 'Art/Elmonia_Vaakuna_256.dds', 1, 1),
+    ('ELMONIA_VAAKUNA', 128, 'Art/Elmonia_Vaakuna_128.dds', 1, 1),
+    ('ELMONIA_VAAKUNA', 64,  'Art/Elmonia_Vaakuna_64.dds',  1, 1),
+    ('ELMONIA_VAAKUNA', 32,  'Art/Elmonia_Vaakuna_32.dds',  1, 1),
+    ('ELMONIA_VAAKUNA', 45,  'Art/Elmonia_Vaakuna_45.dds',  1, 1),
+    ('ELMONIA_VAAKUNA', 80,  'Art/Elmonia_Vaakuna_80.dds',  1, 1),
+    ('UNICORN_ATLAS', 256, 'Art/Unicorn_Atlas_256.dds', 1, 1),
+    ('UNICORN_ATLAS', 128, 'Art/Unicorn_Atlas_128.dds', 1, 1),
+    ('UNICORN_ATLAS', 64,  'Art/Unicorn_Atlas_64.dds',  1, 1),
+    ('UNICORN_ATLAS', 32,  'Art/Unicorn_Atlas_32.dds',  1, 1);
