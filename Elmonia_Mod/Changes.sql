@@ -254,10 +254,10 @@ VALUES
 
 INSERT INTO Buildings
 (Type,
-BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag, MinAreaSize, ConquestProb, HurryCostModifier)
+BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag)
 SELECT
 'BUILDING_SCHOOL_OF_FRIENDSHIP', 
-BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag, MinAreaSize, ConquestProb, HurryCostModifier
+BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag
 FROM Buildings WHERE Type = 'BUILDING_COLOSSEUM';
 
 
