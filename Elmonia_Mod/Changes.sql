@@ -276,10 +276,8 @@ SET Description = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP',
     Happiness = 3
 WHERE Type = 'BUILDING_SCHOOL_OF_FRIENDSHIP';
 
-/*
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 VALUES ('BUILDING_SCHOOL_OF_FRIENDSHIP', 'YIELD_CULTURE', 2);
-*/
 
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 VALUES ('BUILDING_SCHOOL_OF_FRIENDSHIP', 'YIELD_SCIENCE', 2);
