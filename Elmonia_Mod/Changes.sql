@@ -51,9 +51,9 @@ INSERT INTO Units (
 VALUES (
     'UNITCLASS_KNIGHT', -- Class
     'UNIT_ELMONIA_LUNAR_KNIGHT', -- Type
-    'TECH_CHIVALRY', -- PrereqTech
-    22, -- Combat
-    10, -- RangedCombat
+    'TECH_CHIVALRY', -- PrereqTech,
+    22,
+    10,
     84, -- Cost
     4, -- Moves
     1, -- Range
@@ -61,7 +61,7 @@ VALUES (
     'DOMAIN_LAND', -- Domain
     'UNITAI_ATTACK', -- DefaultUnitAI
     'TXT_KEY_UNIT_ELMONIA_LUNAR_KNIGHT', -- Description
-    'TXT_KEY_UNIT_ELMONIA_LUNAR_KNIGHT_PEDIA', -- Civilopedia
+    'TXT_KEY_UNIT_ELMONIA_LUNAR_KNIGHT_PE,DIA', -- Civilopedia
     'TXT_KEY_UNIT_ELMONIA_LUNAR_KNIGHT_STRATEGY', -- Strategy
     'TXT_KEY_UNIT_ELMONIA_LUNAR_KNIGHT_HELP', -- Help
     1, -- MilitarySupport
@@ -72,9 +72,9 @@ VALUES (
     3, -- XPValueAttack
     3, -- XPValueDefense
     'ART_DEF_UNIT_KNIGHT', -- UnitArtInfo
-    'UNICORN_ATLAS', 0, -- UnitFlagAtlas + UnitFlagIconOffset --- IGNORE ---'
+    'UNICORN_ATLAS', 0, -- UnitFlagAtlas + UnitFlagIconOffset
     'ELMONIA_ATLAS', 3, -- IconAtlas + PortraitIndex (Lunar Knight = oikea ala)
-    'HORSE' -- MoveRate
+    'QUADRUPED' -- MoveRate
 );
 
 INSERT INTO Civilization_FreeUnits (CivilizationType, UnitClassType, UnitAIType, Count)
@@ -169,7 +169,8 @@ VALUES (
     'ARTSTYLE_EUROPEAN', -- ArtStyleType
     '_EURO', -- ArtStyleSuffix
     'EUROPEAN', -- ArtStylePrefix
-    'ELMONIA_ATLAS', 0, --  IconAtlas + PortraitIndex
+    'ELMONIA_ATLAS', 
+    0,
     'ELMONIA_VAAKUNA', -- AlphaIconAtlas (sama atlas, alpha-kanava hoitaa läpinäkyvyyden)
     'MapEngland512.dds', -- MapImage
     'TXT_KEY_CIV5_DAWN_ELMONIA_TEXT', -- DawnOfManQuote
@@ -254,17 +255,15 @@ VALUES
 
 INSERT INTO Buildings
 (Type,
-BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag)
+BuildingClass, Cost, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag)
 SELECT
 'BUILDING_SCHOOL_OF_FRIENDSHIP', 
-BuildingClass, Cost, FaithCost, UnlockedByBelief, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag
+BuildingClass, Cost, HurryCostModifier, MinAreaSize, ConquestProb, ArtDefineTag
 FROM Buildings WHERE Type = 'BUILDING_COLOSSEUM';
 
 
 UPDATE Buildings
-SET
-    Type = 'BUILDING_SCHOOL_OF_FRIENDSHIP',
-    Description = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP',
+SET Description = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP',
     Help = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP_HELP',
     Strategy = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP_STRATEGY',
     Civilopedia = 'TXT_KEY_BUILDING_SCHOOL_OF_FRIENDSHIP_PEDIA',
@@ -272,13 +271,15 @@ SET
     IconAtlas = 'ELMONIA_ATLAS',
     PortraitIndex = 2,
     GoldMaintenance = 0,
-    Defense = 300,
+    Defense = 15,
     ExtraCityHitPoints = 15,
     Happiness = 3
 WHERE Type = 'BUILDING_SCHOOL_OF_FRIENDSHIP';
 
+/*
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 VALUES ('BUILDING_SCHOOL_OF_FRIENDSHIP', 'YIELD_CULTURE', 2);
+*/
 
 INSERT INTO Building_YieldChanges (BuildingType, YieldType, Yield)
 VALUES ('BUILDING_SCHOOL_OF_FRIENDSHIP', 'YIELD_SCIENCE', 2);
