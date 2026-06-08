@@ -52,7 +52,7 @@ INSERT INTO Units (
 VALUES (
     'UNITCLASS_KNIGHT', -- Class
     'UNIT_ELMONIA_LUNAR_KNIGHT', -- Type
-    -- 'UNITCLASS_CAVALRY', -- GoodyHutUpgradeUnitClass
+    'UNITCLASS_CAVALRY', -- GoodyHutUpgradeUnitClass
     'TECH_CHIVALRY', -- PrereqTech,
     25,
     12,
@@ -79,8 +79,8 @@ VALUES (
     'QUADRUPED' -- MoveRate
 );
 
-   -- INSERT INTO UNIT_FREE_PROMOTIONS (UnitType, PromotionType)
-   -- VALUES ('UNIT_ELMONIA_LUNAR_KNIGHT', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
+   INSERT INTO UNIT_FREE_PROMOTIONS (UnitType, PromotionType)
+   VALUES ('UNIT_ELMONIA_LUNAR_KNIGHT', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 
 INSERT INTO Civilization_FreeUnits (CivilizationType, UnitClassType, UnitAIType, Count)
 VALUES ('CIVILIZATION_ELMONIA', 'UNITCLASS_SETTLER', 'UNITAI_SETTLE', 1);
@@ -198,7 +198,7 @@ VALUES (
     'TXT_KEY_TRAIT_HEDONISTIC_CULTURE_SHORT',
     20,
     50,
-    75
+    50
 );
 
 INSERT INTO Trait_ImprovementYieldChanges (TraitType, ImprovementType, YieldType, Yield)
