@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="asdfdsfd-jklsjkl-3456-mos" version="0">
+    <Properties>
+        <Name>Elmonia - The Hedonist Kingdom</Name>
+        <Teaser>A civilization built on hedonistic culture, golden ages, and the fierce Lunar Knights.</Teaser>
+    <Description>Adds Elmonia, led by Emma XIV. A civilization built on hedonistic culture, golden ages, and the fierce Lunar Knights.</Description>
+    <Authors>Ilpo</Authors>
+    <SpecialThanks>Emma</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>1</ReloadAudioSystem>
+    </Properties>
+    <Files>
+        <File>Elmonia_GameText.xml</File>
+        <File>Changes.sql</File>
+        <File import="1">Audio/Elmonia_DOM.mp3</File>
+        <File>Art/DOM_Elmonia.dds</File>
+        <File>Art/Elmonia_Atlas_32.dds</File>
+        <File>Art/Elmonia_Atlas_45.dds</File>
+        <File>Art/Elmonia_Atlas_64.dds</File>
+        <File>Art/Elmonia_Atlas_80.dds</File>
+        <File>Art/Elmonia_Atlas_128.dds</File>
+        <File>Art/Elmonia_Atlas_256.dds</File>
+        <File>Art/Elmonia_Vaakuna_32.dds</File>
+        <File>Art/Elmonia_Vaakuna_45.dds</File>
+        <File>Art/Elmonia_Vaakuna_64.dds</File>
+        <File>Art/Elmonia_Vaakuna_80.dds</File>
+        <File>Art/Elmonia_Vaakuna_128.dds</File>
+        <File>Art/Elmonia_Vaakuna_256.dds</File>
+        <File>Art/Unicorn_Atlas_32.dds</File>
+        <File>Art/Unicorn_Atlas_64.dds</File>
+        <File>Art/Unicorn_Atlas_128.dds</File>
+        <File>Art/Unicorn_Atlas_256.dds</File>
+    </Files>
+    <Actions>
+        <OnModActivated>
+            <UpdateDatabase>Elmonia_GameText.xml</UpdateDatabase>
+            <UpdateDatabase>Changes.sql</UpdateDatabase>
+        </OnModActivated>
+    </Actions>
+</Mod>

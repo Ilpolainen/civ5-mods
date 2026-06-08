@@ -21,7 +21,7 @@ VALUES
 INSERT INTO Units (
     Class,
     Type,
-    -- GoodyHutUpgradeUnitClass,
+    GoodyHutUpgradeUnitClass,
     PrereqTech,
     Combat,
     RangedCombat,
@@ -78,9 +78,6 @@ VALUES (
     'ELMONIA_ATLAS', 3, -- IconAtlas + PortraitIndex (Lunar Knight = oikea ala)
     'QUADRUPED' -- MoveRate
 );
-
-   INSERT INTO UNIT_FREE_PROMOTIONS (UnitType, PromotionType)
-   VALUES ('UNIT_ELMONIA_LUNAR_KNIGHT', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 
 INSERT INTO Civilization_FreeUnits (CivilizationType, UnitClassType, UnitAIType, Count)
 VALUES ('CIVILIZATION_ELMONIA', 'UNITCLASS_SETTLER', 'UNITAI_SETTLE', 1);
