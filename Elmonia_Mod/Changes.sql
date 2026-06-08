@@ -21,6 +21,7 @@ VALUES
 INSERT INTO Units (
     Class,
     Type,
+    -- GoodyHutUpgradeUnitClass,
     PrereqTech,
     Combat,
     RangedCombat,
@@ -51,12 +52,13 @@ INSERT INTO Units (
 VALUES (
     'UNITCLASS_KNIGHT', -- Class
     'UNIT_ELMONIA_LUNAR_KNIGHT', -- Type
+    -- 'UNITCLASS_CAVALRY', -- GoodyHutUpgradeUnitClass
     'TECH_CHIVALRY', -- PrereqTech,
-    22,
-    10,
-    84, -- Cost
+    25,
+    12,
+    85, -- Cost
     4, -- Moves
-    1, -- Range
+    2, -- Range
     'UNITCOMBAT_MOUNTED', -- CombatClass
     'DOMAIN_LAND', -- Domain
     'UNITAI_ATTACK', -- DefaultUnitAI
@@ -76,6 +78,9 @@ VALUES (
     'ELMONIA_ATLAS', 3, -- IconAtlas + PortraitIndex (Lunar Knight = oikea ala)
     'QUADRUPED' -- MoveRate
 );
+
+   -- INSERT INTO UNIT_FREE_PROMOTIONS (UnitType, PromotionType)
+   -- VALUES ('UNIT_ELMONIA_LUNAR_KNIGHT', 'PROMOTION_CAN_MOVE_AFTER_ATTACKING');
 
 INSERT INTO Civilization_FreeUnits (CivilizationType, UnitClassType, UnitAIType, Count)
 VALUES ('CIVILIZATION_ELMONIA', 'UNITCLASS_SETTLER', 'UNITAI_SETTLE', 1);
@@ -191,9 +196,9 @@ VALUES (
     'TRAIT_HEDONISTIC_CULTURE',
     'TXT_KEY_TRAIT_HEDONISTIC_CULTURE',
     'TXT_KEY_TRAIT_HEDONISTIC_CULTURE_SHORT',
-    15,
+    20,
     50,
-    50
+    75
 );
 
 INSERT INTO Trait_ImprovementYieldChanges (TraitType, ImprovementType, YieldType, Yield)
